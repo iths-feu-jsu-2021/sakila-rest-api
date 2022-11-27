@@ -24,3 +24,5 @@ export const updateActor = async (actorId:number, actor:TActor) => {
 export const deleteActor = async (actorId:number) => {
     return await query('DELETE FROM actor WHERE actor_id=$1', [ actorId ]);
 }
+
+// Tested on Insomnia
