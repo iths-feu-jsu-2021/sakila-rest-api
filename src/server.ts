@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import actorRouter from './routes/actorRouter.js';
+import actorRouter from './routes/actorRouter';
 
 dotenv.config();
 
@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/actor', actorRouter);
+app.use('/actor',actorRouter);
 
 const port = 3030
 
